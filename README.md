@@ -1,6 +1,9 @@
 # Engineering Graduate Salary Prediction using Principal Component Analysis(PCA)
 
 ## Dataset Description - 
+Dataset Selection plays a significant role in what type of algorithm should be used where it can be supervised, unsupervised or semi-supervised as well as the quantity of valid records and attributes  must  be taken into account when selecting or importing datasets. The supervised technique is used in this paper on a dataset from Kaggle[11] consisting of 2998 records and 34 attributes out of which 19 appropriate attributes have been selected. The number of records and attributes chosen from the dataset were substantial enough to allow for the development of an efficient model and forecast a conveniently wider spectrum of options. The dataset is saved in CSV format and its dataset's qualities are logical and competent, allowing for a precise and efficient forecast of an engineering graduate's salary. 
+<br>
+### Attributes of the dataset - 
 * ID: A unique ID to identify a candidate
 * Salary: Annual CTC offered to the candidate (in INR)
 * Gender: Candidate's gender
