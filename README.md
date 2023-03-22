@@ -34,6 +34,7 @@
 * agreeableness: Scores in one of the sections of AMCAT's personality test
 * extraversion: Scores in one of the sections of AMCAT's personality test
 * nueroticism: Scores in one of the sections of AMCAT's personality test
-* openess_to_experience: Scores in one of the sections of AMCAT's personality test__
+* openess_to_experience: Scores in one of the sections of AMCAT's personality test
+<br>
 Link of dataset - https://www.kaggle.com/datasets/manishkc06/engineering-graduate-salary-prediction
 
