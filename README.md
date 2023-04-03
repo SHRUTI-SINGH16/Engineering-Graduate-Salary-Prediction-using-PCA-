@@ -112,6 +112,13 @@ where, V represents an orthogonal matrix consisting of eigenvectors and S denote
 where, λ<sub>i</sub> denotes the *i*th λ eigenvalue. The selection of the first few significant principal components as per specified threshold value of cumulative explained variance, ensures stability in estimation of salary. Thus, the salary column is bound to the 15 selected principal components and they are splitted into training and testing dataset in the ratio of 70:30.
 
 
+<img src="https://user-images.githubusercontent.com/91374600/229579759-5bc866df-f0bd-4f3c-9204-eb6c14dfbc87.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+<img src="https://user-images.githubusercontent.com/91374600/229579861-5781ecdc-9152-4385-b7a8-eb286c3063e6.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+
+
+
 
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
