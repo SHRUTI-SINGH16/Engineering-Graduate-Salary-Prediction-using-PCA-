@@ -52,3 +52,17 @@ The results obtained after application of various machine learning algorithms on
 From the above line chart it can be seen that none of the algorithms performed up to the mark and hence the PCA was applied in order to improve the results. The line chart is as follows:
 
 <img src="https://user-images.githubusercontent.com/91374600/229486206-5260dfae-7a0d-4687-9ade-d0dc9079b06a.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+The green line represents the SVM predictions. The green line is the closest to the black line. This indicates that SVM predictions are closer to the actual predictions when compared to other models’ predictions. Hence the accuracy of prediction was increased after applying PCA .
+
+The results of machine learning algorithms on these modified columns are
+
+| Algorithm     | MAE           |  RMSE         | R-Square      |
+| ------------- | ------------- | ------------- | ------------- |
+| Linear Regression | 18997  |  104348.5 | 0.5875523 |
+| SVM |19405.87| 29929.55 |0.9350692|
+|Xgboost 26151.12 34827.99 0.9138152|
+|Random Forest| 32130.12 |42319.56| 0.8275663|
+|Decision Tree |60571.13 |77397.29 |0.5008397|
+
+
