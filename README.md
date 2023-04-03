@@ -65,4 +65,16 @@ The results of machine learning algorithms on these modified columns are
 |Random Forest| 32130.12 |42319.56| 0.8275663|
 |Decision Tree |60571.13 |77397.29 |0.5008397|
 
+After comparing the results the best R-squared value of 0.9350692 was obtained by applying the Support Vector Machine(SVM) Regression. The following is the graph of
+the comparison:
+
 <img src="https://user-images.githubusercontent.com/91374600/229487719-478d97ba-773b-43b9-ba53-46fdef535194.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+In the above chart the values of respective columns have been scaled between a range from 0 to 125 for a proper view of the graph representing comparison.
+
+## Conclusion
+Various algorithms have been applied on the data so as to get the best possible results. Firstly the data was preprocessed by imputing null values with the mean values and all the unnecessary columns were removed. Then the correlation between the variables were found and those variables which are highly correlated were
+removed and then different algorithms were applied. However, the obtained results were not satisfactory. Hence, finally the concept of Principal components analysis (PCA) was used and the principal components for the data were found. Total 19 principal components were obtained. Out of theses 19 principal components, 15 principal components were selected whose cumulative value of variance explained for the respective PCs is less than the threshold value 0.93 Then the algorithms were again applied on this modified data which in turned improved the results.
+Among the five algorithms that were applied, the performance of Support Vector Machine (SVM) Regression was found to be the best with R-square value as 0.9350692 and root mean square error (RMSE) 29929.55.
+The performance order of different algorithms starting with the best results on our dataset is as follows: Support Vector Machine(SVM), Xgboost, Random Forest, Linear Regression, Decision Tree.
+Hence we conclude for the given dataset Support Vector Machine(SVM) and Xgboost are the best algorithms to apply.
