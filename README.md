@@ -46,4 +46,5 @@ Link of dataset - https://www.kaggle.com/datasets/manishkc06/engineering-graduat
 
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
-![image](https://user-images.githubusercontent.com/91374600/229485210-17bb904b-65a2-4b67-bca0-db5bea944d94.png)
+
+![image](https://user-images.githubusercontent.com/91374600/229485210-17bb904b-65a2-4b67-bca0-db5bea944d94.png = 250x250)
