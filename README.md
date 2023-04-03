@@ -36,8 +36,11 @@ Link of dataset - https://www.kaggle.com/datasets/manishkc06/engineering-graduat
 <img src="https://user-images.githubusercontent.com/91374600/229491092-d8e70e80-bd4c-48f8-9df9-d87c60c6c7dd.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
 
 ## Dataset Pre-processing
-### 1. Outlier Detection - 
-### Visualizing Outliers in the Salary
+### 1. Visualizing and Removing Outliers in the Salary
+
+```R
+plot1 <- ggplot(data = salary_df, aes(y = Salary)) + geom_boxplot() + scale_y_continuous(limits = c(0, 1000000))
+```
 <img src="https://user-images.githubusercontent.com/91374600/229492914-686fafef-470a-4d84-b33d-de8e93ca7d73.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
 
 
