@@ -87,6 +87,12 @@ mean_d <- mean(salary_df_num$Domain, na.rm = TRUE)
 salary_df_num$Domain[ idx_na_d ] <- mean_d
 ```
 
+After all the data cleaning the number of records remaing were 2920 along with 19 attributes.
+
+
+## B. Principal Component Analysis
+
+
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
 
