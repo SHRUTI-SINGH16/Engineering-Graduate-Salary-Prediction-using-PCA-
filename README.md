@@ -9,6 +9,7 @@ Dataset Selection plays a significant role in what type of algorithm should be u
 ### Attributes of the dataset - 
 
 |Name of the Attribute| Type |Categories|
+| ------------- | ------------- | ------------- |
 |CollegeGPA |num |73.8 65 61.9 80.4 64.3 ...|
 |GraduationYear |int |2013 2014 2011 2013 2012|
 |English |int| 650 440 485 675 575|
@@ -63,8 +64,11 @@ In the above chart the values of respective columns have been scaled between a r
 Various algorithms have been applied on the data so as to get the best possible results. Firstly the data was preprocessed by imputing null values with the mean values and all the unnecessary columns were removed. Then the correlation between the variables were found and those variables which are highly correlated were
 removed and then different algorithms were applied. However, the obtained results were not satisfactory. Hence, finally the concept of Principal components analysis (PCA) was used and the principal components for the data were found. Total 19 principal components were obtained. Out of theses 19 principal components, 15 principal components were selected whose cumulative value of variance explained for the respective PCs is less than the threshold value 0.93 Then the algorithms were again applied on this modified data which in turned improved the results.
 <br>
+<br>
 Among the five algorithms that were applied, the performance of Support Vector Machine (SVM) Regression was found to be the best with R-square value as 0.9350692 and root mean square error (RMSE) 29929.55.
 <br>
+<br>
 The performance order of different algorithms starting with the best results on our dataset is as follows: Support Vector Machine(SVM), Xgboost, Random Forest, Linear Regression, Decision Tree.
+<br>
 <br>
 Hence we conclude for the given dataset Support Vector Machine(SVM) and Xgboost are the best algorithms to apply.
