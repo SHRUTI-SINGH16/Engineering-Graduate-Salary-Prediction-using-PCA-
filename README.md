@@ -96,7 +96,21 @@ Principal components analysis (PCA) is used for the dimension reduction of data 
 <br>
 <br>
 Firstly, The raw data matrix X<sub>R</sub> with 19 features is centered to the mean, then the centered data matrix X is used to compute the covariance matrix C which is given as, 
-<img src="https://user-images.githubusercontent.com/91374600/229578165-f9f51788-c446-4fe8-97ad-a646e0399e0c.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="60"/>
+<br>
+<img src="https://user-images.githubusercontent.com/91374600/229578165-f9f51788-c446-4fe8-97ad-a646e0399e0c.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80"/>
+<br>
+where, C denotes the covariance matrix, X is the mean centered data matrix, 𝑋<sup>T</sup> is the transpose of X and n represents the total number of samples in the data.
+The covariance matrix is then used to compute the eigenvectors and corresponding eigenvalues λ<sub>i</sub> i.e. eigendecomposition of the covariance matrix is carried
+out. As the matrix C is symmetric and positive semidefinite, so it is further diagonalized as follows
+<br>
+<img src="https://user-images.githubusercontent.com/91374600/229578674-eb8bb145-83c4-4105-9ee7-5b298d403fdb.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80"/>
+<br>
+where, V represents an orthogonal matrix consisting of eigenvectors and S denotes a diagonal matrix with non-negative eigenvalues λ<sub>i</sub> as the diagonal elements, in decreasing order. Thus, the columns of the matrix 𝑃 = 𝑋 𝑉 represents the principal components. Out of the 19 principal components 15 are selected whose cumulative value of variance explained for the respective PCs is less than the threshold value 0.93, the cumulative variance explained is given as,
+<br>
+<img src="https://user-images.githubusercontent.com/91374600/229578993-67015043-0eee-4493-a9e5-ca7577e79132.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80"/>
+<br>
+where, λ<sub>i</sub> denotes the *i*th λ eigenvalue. The selection of the first few significant principal components as per specified threshold value of cumulative explained variance, ensures stability in estimation of salary. Thus, the salary column is bound to the 15 selected principal components and they are splitted into training and testing dataset in the ratio of 70:30.
+
 
 
 ## Results
