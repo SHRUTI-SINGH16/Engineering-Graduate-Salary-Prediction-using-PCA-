@@ -39,9 +39,22 @@ Link of dataset - https://www.kaggle.com/datasets/manishkc06/engineering-graduat
 ### 1. Visualizing and Removing Outliers in the Salary
 
 ```R
+##visualizing the outliers
 plot1 <- ggplot(data = salary_df, aes(y = Salary)) + geom_boxplot() + scale_y_continuous(limits = c(0, 1000000))
 ```
 <img src="https://user-images.githubusercontent.com/91374600/229492914-686fafef-470a-4d84-b33d-de8e93ca7d73.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+```R
+## Get outliers
+out_salary <- boxplot.stats(salary_df_num$Salary)$out
+
+## Get index of outliers
+out_idx <- which(salary_df_num$Salary %in% c(out_salary))
+
+## Remove outlier
+salary_df_num <- salary_df_num[ -out_idx,]
+```
+
 
 
 ### 2. Corrgram 
