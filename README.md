@@ -92,6 +92,10 @@ After all the data cleaning the number of records remaing were 2920 along with 1
 
 ## B. Principal Component Analysis
 
+Principal components analysis (PCA) is used for the dimension reduction of data and helps in determining the most significant features in the dataset through a statistical approach. It ensures minimum loss of information and increases the interpretability of the data. Principal components are the orthogonal projections which map a data having high dimension onto a low dimensional space. Thus, a principal component represents a line that encapsulates the majority of the data variance such that the first principal component captures most of the variance and for the *i*th principal component contribution decreases as the *i* value increases.
+<br>
+<br>
+Firstly, The raw data matrix X<sub>R</sub> with 19 features is centered to the mean, then the centered data matrix X is used to compute the covariance matrix C which is given as, 
 
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
