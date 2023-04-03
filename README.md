@@ -61,7 +61,7 @@ The results of machine learning algorithms on these modified columns are
 | ------------- | ------------- | ------------- | ------------- |
 | Linear Regression | 18997  |  104348.5 | 0.5875523 |
 | SVM |19405.87| 29929.55 |0.9350692|
-|Xgboost 26151.12 34827.99 0.9138152|
+|Xgboost |26151.12 |34827.99 |0.9138152|
 |Random Forest| 32130.12 |42319.56| 0.8275663|
 |Decision Tree |60571.13 |77397.29 |0.5008397|
 
