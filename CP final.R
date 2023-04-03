@@ -9,7 +9,7 @@ library(xgboost)
 library(rpart)
 library(e1071)
 library(Metrics)
-#library(caret)
+library(caret)
 
 salary_df <- read.csv("Engineering_graduate_salary.csv")
 
@@ -127,6 +127,7 @@ salary_df$ID <- NULL
 salary_df$DOB <- NULL
 
 
+print(dim(salary_df))
 print(dim(salary_df_num))
 
 set.seed(2021)
