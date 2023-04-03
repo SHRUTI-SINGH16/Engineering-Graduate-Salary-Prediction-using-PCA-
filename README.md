@@ -33,7 +33,7 @@ Dataset Selection plays a significant role in what type of algorithm should be u
 Link of dataset - https://www.kaggle.com/datasets/manishkc06/engineering-graduate-salary-prediction
 
 ## Workflow
-<img src="https://user-images.githubusercontent.com/91374600/229491092-d8e70e80-bd4c-48f8-9df9-d87c60c6c7dd.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229491092-d8e70e80-bd4c-48f8-9df9-d87c60c6c7dd.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 ## Dataset Pre-processing
 ## A. Data Cleaning
@@ -47,7 +47,7 @@ On visualizing the data, outliers were discovered in the salary column of the da
 ##visualizing the outliers
 plot1 <- ggplot(data = salary_df, aes(y = Salary)) + geom_boxplot() + scale_y_continuous(limits = c(0, 1000000))
 ```
-<img src="https://user-images.githubusercontent.com/91374600/229492914-686fafef-470a-4d84-b33d-de8e93ca7d73.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229492914-686fafef-470a-4d84-b33d-de8e93ca7d73.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 ```R
 ## Get outliers
@@ -65,7 +65,7 @@ salary_df_num <- salary_df_num[ -out_idx,]
 ### 2. Corrgram 
 It allows to analyse the relationship between each pair of numeric variables in a dataset.
 
-<img src="https://user-images.githubusercontent.com/91374600/229493433-172a77cc-e311-4a52-b8f3-65f06977362a.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229493433-172a77cc-e311-4a52-b8f3-65f06977362a.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 
 ### 3. Imputing the NA values
@@ -112,19 +112,19 @@ where, V represents an orthogonal matrix consisting of eigenvectors and S denote
 where, λ<sub>i</sub> denotes the *i*th λ eigenvalue. The selection of the first few significant principal components as per specified threshold value of cumulative explained variance, ensures stability in estimation of salary. Thus, the salary column is bound to the 15 selected principal components and they are splitted into training and testing dataset in the ratio of 70:30.
 
 
-<img src="https://user-images.githubusercontent.com/91374600/229579759-5bc866df-f0bd-4f3c-9204-eb6c14dfbc87.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229579759-5bc866df-f0bd-4f3c-9204-eb6c14dfbc87.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
-<img src="https://user-images.githubusercontent.com/91374600/229579861-5781ecdc-9152-4385-b7a8-eb286c3063e6.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229579861-5781ecdc-9152-4385-b7a8-eb286c3063e6.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 ### Plotting the best fit line after PCA using different ML models
 
 <img src="https://user-images.githubusercontent.com/91374600/229580440-7f124b08-5a1b-4b74-80ba-f791dc9d20d9.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
-<img src="https://user-images.githubusercontent.com/91374600/229580501-1fecaebe-a5a4-40aa-845e-5d41d129e452.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229580501-1fecaebe-a5a4-40aa-845e-5d41d129e452.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
-<img src="https://user-images.githubusercontent.com/91374600/229580574-59c0888f-d4d5-4fd0-92bf-581513f2ba6c.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229580574-59c0888f-d4d5-4fd0-92bf-581513f2ba6c.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
-<img src="https://user-images.githubusercontent.com/91374600/229580638-af6211bc-a2b1-4fe0-9ada-262bcbe89572.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229580638-af6211bc-a2b1-4fe0-9ada-262bcbe89572.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 
 
@@ -134,11 +134,11 @@ where, λ<sub>i</sub> denotes the *i*th λ eigenvalue. The selection of the firs
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
 
-<img src="https://user-images.githubusercontent.com/91374600/229485210-17bb904b-65a2-4b67-bca0-db5bea944d94.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229485210-17bb904b-65a2-4b67-bca0-db5bea944d94.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 From the above line chart it can be seen that none of the algorithms performed up to the mark and hence the PCA was applied in order to improve the results. The line chart is as follows:
 
-<img src="https://user-images.githubusercontent.com/91374600/229486206-5260dfae-7a0d-4687-9ade-d0dc9079b06a.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229486206-5260dfae-7a0d-4687-9ade-d0dc9079b06a.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 The green line represents the SVM predictions. The green line is the closest to the black line. This indicates that SVM predictions are closer to the actual predictions when compared to other models’ predictions. Hence the accuracy of prediction was increased after applying PCA .
 
@@ -155,7 +155,7 @@ The results of machine learning algorithms on these modified columns are
 After comparing the results the best R-squared value of 0.9350692 was obtained by applying the Support Vector Machine(SVM) Regression. The following is the graph of
 the comparison:
 
-<img src="https://user-images.githubusercontent.com/91374600/229487719-478d97ba-773b-43b9-ba53-46fdef535194.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/91374600/229487719-478d97ba-773b-43b9-ba53-46fdef535194.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="1000"/>
 
 In the above chart the values of respective columns have been scaled between a range from 0 to 125 for a proper view of the graph representing comparison.
 
