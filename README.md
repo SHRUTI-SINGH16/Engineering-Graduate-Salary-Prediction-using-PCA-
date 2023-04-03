@@ -65,4 +65,4 @@ The results of machine learning algorithms on these modified columns are
 |Random Forest| 32130.12 |42319.56| 0.8275663|
 |Decision Tree |60571.13 |77397.29 |0.5008397|
 
-
+<img src="https://user-images.githubusercontent.com/91374600/229487719-478d97ba-773b-43b9-ba53-46fdef535194.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
