@@ -36,7 +36,12 @@ Link of dataset - https://www.kaggle.com/datasets/manishkc06/engineering-graduat
 <img src="https://user-images.githubusercontent.com/91374600/229491092-d8e70e80-bd4c-48f8-9df9-d87c60c6c7dd.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
 
 ## Dataset Pre-processing
+## A. Data Cleaning
+The data cleaning method entails finding the data, extracting it, cleaning it, and integrating it into a dataset that can be analyzed as per requirements.
+
+
 ### 1. Visualizing and Removing Outliers in the Salary
+On visualizing the data, outliers were discovered in the salary column of the dataset which had to be eliminated since they decrease the correlation by scattering the data and causing R2 to approach zero. As a result, the salary column outliers were removed using their index positions to enhance the R2 value. 
 
 ```R
 ##visualizing the outliers
@@ -58,10 +63,29 @@ salary_df_num <- salary_df_num[ -out_idx,]
 
 
 ### 2. Corrgram 
+It allows to analyse the relationship between each pair of numeric variables in a dataset.
+
 <img src="https://user-images.githubusercontent.com/91374600/229493433-172a77cc-e311-4a52-b8f3-65f06977362a.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
 
 
+### 3. Imputing the NA values
+In the bulk of the dataset, -1 values were likewise a key source of interference since they resemble empty entries hence had to be eliminated too. As part of the data cleansing process, all -1 values in the selected attributes were converted to NA values, which were then subsequently replaced by the mean values of the corresponding columns.
 
+This procedure was done on 8 attributes namely Domain, ComputerProgramming, ElectronicsAndSemicon, Computer Science, MechanicalEngg, ElectricalEngg, TelecomEngg and CivilEngg.
+
+```R
+#Change NA to Mean (Domain)
+salary_df_num$Domain[salary_df_num$Domain==-1]=NA
+
+## get index of NAs
+idx_na_d <- which(is.na(salary_df_num$Domain))
+
+## compute mean
+mean_d <- mean(salary_df_num$Domain, na.rm = TRUE)
+
+## input NAs with mean
+salary_df_num$Domain[ idx_na_d ] <- mean_d
+```
 
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
