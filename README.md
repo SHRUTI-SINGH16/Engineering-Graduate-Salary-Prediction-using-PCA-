@@ -116,6 +116,17 @@ where, λ<sub>i</sub> denotes the *i*th λ eigenvalue. The selection of the firs
 
 <img src="https://user-images.githubusercontent.com/91374600/229579861-5781ecdc-9152-4385-b7a8-eb286c3063e6.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
 
+### Plotting the best fit line after PCA using different ML models
+
+<img src="https://user-images.githubusercontent.com/91374600/229580440-7f124b08-5a1b-4b74-80ba-f791dc9d20d9.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+<img src="https://user-images.githubusercontent.com/91374600/229580501-1fecaebe-a5a4-40aa-845e-5d41d129e452.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+<img src="https://user-images.githubusercontent.com/91374600/229580574-59c0888f-d4d5-4fd0-92bf-581513f2ba6c.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+<img src="https://user-images.githubusercontent.com/91374600/229580638-af6211bc-a2b1-4fe0-9ada-262bcbe89572.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600"/>
+
+
 
 
 
