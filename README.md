@@ -96,6 +96,8 @@ Principal components analysis (PCA) is used for the dimension reduction of data 
 <br>
 <br>
 Firstly, The raw data matrix X<sub>R</sub> with 19 features is centered to the mean, then the centered data matrix X is used to compute the covariance matrix C which is given as, 
+<img src="https://user-images.githubusercontent.com/91374600/229578165-f9f51788-c446-4fe8-97ad-a646e0399e0c.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="60"/>
+
 
 ## Results
 The results obtained after application of various machine learning algorithms on the columns before and after preprocessing are depicted in the form of a line chart where the black line represents the actual values.
