@@ -103,7 +103,7 @@ where, C denotes the covariance matrix, X is the mean centered data matrix, 𝑋
 The covariance matrix is then used to compute the eigenvectors and corresponding eigenvalues λ<sub>i</sub> i.e. eigendecomposition of the covariance matrix is carried
 out. As the matrix C is symmetric and positive semidefinite, so it is further diagonalized as follows
 <br>
-<img src="https://user-images.githubusercontent.com/91374600/229578674-eb8bb145-83c4-4105-9ee7-5b298d403fdb.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="120"/>
+<img src="https://user-images.githubusercontent.com/91374600/229578674-eb8bb145-83c4-4105-9ee7-5b298d403fdb.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="120" align="center"/>
 <br>
 where, V represents an orthogonal matrix consisting of eigenvectors and S denotes a diagonal matrix with non-negative eigenvalues λ<sub>i</sub> as the diagonal elements, in decreasing order. Thus, the columns of the matrix 𝑃 = 𝑋 𝑉 represents the principal components. Out of the 19 principal components 15 are selected whose cumulative value of variance explained for the respective PCs is less than the threshold value 0.93, the cumulative variance explained is given as,
 <br>
